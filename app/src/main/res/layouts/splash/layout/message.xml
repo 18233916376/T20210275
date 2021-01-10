@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/send_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/receive_image"/>
+
+        <com.example.epidemicinfo.UI.BubbleLayout
+            android:id="@+id/send_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/send_image"
+            android:layout_marginRight="60dp"
+            app:lookAt="left"
+            app:lookLength="10dp"
+            app:lookPosition="16dp"
+            app:lookWidth="20dp"
+            app:bubbleColor="#f0ff"
+            app:bubbleRadius="20dp"
+            app:bubblePadding="10dp"
+            app:shadowX="0dp"
+            app:shadowY="0dp"
+            app:shadowColor="@color/colorPrimary">
+            <TextView
+                android:id="@+id/send_message"
+                android:text="你的名字是什么士大夫撒旦法撒地方撒地方阿斯顿发撒的发生阿士大夫撒地方"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </com.example.epidemicinfo.UI.BubbleLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/receive_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:src="@drawable/receive_image"/>
+
+        <com.example.epidemicinfo.UI.BubbleLayout
+            android:id="@+id/receive_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="60dp"
+            android:layout_toLeftOf="@+id/receive_image"
+            app:lookAt="right"
+            app:lookLength="10dp"
+            app:lookPosition="16dp"
+            app:lookWidth="20dp"
+            app:bubbleColor="#f0ff"
+            app:bubbleRadius="20dp"
+            app:bubblePadding="10dp"
+            app:shadowX="0dp"
+            app:shadowY="0dp"
+            app:shadowColor="@color/colorPrimary">
+            <TextView
+                android:id="@+id/receive_message"
+                android:text="测试桑撒旦法打发士大夫撒多个干啥对光反射的水电费水电费"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </com.example.epidemicinfo.UI.BubbleLayout>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
